@@ -4,9 +4,8 @@ package main
 	将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 */
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	// 结果链表
-	prehead := &ListNode{}
 	// 哨兵，指向结果链表
+	prehead := &ListNode{}
 	result := prehead
 
 	// 如果l1或者l2有一个为nil，则退出循环
