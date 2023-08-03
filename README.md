@@ -1,5 +1,4 @@
 # leetcode
----
 ## 算法基础
 
 - [算法和数据结构](base/base.md)
@@ -10,3 +9,4 @@
 - [二分查找递归解法](base/binarysearch/binarysearch_test.go)
 - [尾递归](base/recursion/recursion_test.go)
 - [斐波那契数列](base/recursion/f_test.go)
+- [归并排序](base/sort/mergesort_test.go)
