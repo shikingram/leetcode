@@ -10,3 +10,5 @@
 - [尾递归](base/recursion/recursion_test.go)
 - [斐波那契数列](base/recursion/f_test.go)
 - [归并排序](base/sort/mergesort_test.go)
+- [master公式](base/master.md)
+- [归并排序+求小和](base/sort/smallsum_test.go)
