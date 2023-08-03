@@ -12,3 +12,4 @@
 - [归并排序](base/sort/mergesort_test.go)
 - [master公式](base/master.md)
 - [归并排序+求小和](base/sort/smallsum_test.go)
+- [快速排序+荷兰国旗问题](base/sort/quicksort_test.go)
