@@ -1,6 +1,5 @@
 # leetcode
 ## 算法基础
-
 - [算法和数据结构](base/base.md)
 - [时间复杂度](base/base_part2.md)
 - [冒泡排序](base/sort/bubblesort_test.go)
@@ -13,3 +12,5 @@
 - [master公式](base/master.md)
 - [归并排序+求小和](base/sort/smallsum_test.go)
 - [快速排序+荷兰国旗问题](base/sort/quicksort_test.go)
+- [堆结构](base/heapsort_base.md)
+- [堆排序](base/sort/heapsort_test.go)
