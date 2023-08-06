@@ -35,6 +35,7 @@ func quickSortProcess(arr []int, L, R int) {
 	if L < R {
 		// 随机取值放到R位置
 		rand.Seed(time.Now().UnixNano())
+		// 0 ~ len(arr) -1
 		swap.Swap(arr, L+rand.Intn(R-L+1), R)
 		arrP := partition(arr, L, R)
 		fmt.Println("arrP", arrP)
@@ -44,16 +45,18 @@ func quickSortProcess(arr []int, L, R int) {
 }
 
 /*
-	荷兰国旗问题求解思路：
-		三个指针分别记录小于区间下标(p1)，大于区间下标(p2)，以及当前遍历下标(i)
-		1）当前下标的值target 小于 指定num 则，target和p1+1下标的值交换,p1 ++ ,i ++
-		2）target == num ,  i ++
-		3) target > num ,target 和 p2-1下标的值交换，p2 --,i 不变
+荷兰国旗问题求解思路：
+
+	三个指针分别记录小于区间下标(p1)，大于区间下标(p2)，以及当前遍历下标(i)
+	1）当前下标的值target 小于 指定num 则，target和p1+1下标的值交换,p1 ++ ,i ++
+	2）target == num ,  i ++
+	3) target > num ,target 和 p2-1下标的值交换，p2 --,i 不变
 */
 func partition(arr []int, L, R int) []int {
 	fmt.Printf("L:%d,R:%d,arr[L]:%d,arr[R]:%d \n", L, R, arr[L], arr[R])
 	i := L
 	p1 := L - 1
+	// p2 的位置不要从R +1 开始，因为R的位置不需要动
 	p2 := R
 
 	for {
