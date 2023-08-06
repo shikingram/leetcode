@@ -25,20 +25,20 @@ func heapSort(arr []int) {
 	if len(arr) < 2 {
 		return 
 	}
-	for i := 0 ;i < len(arr);i ++ {
-		heapInsert(arr,i)
+	for i := 0 ;i < len(arr);i ++ { //O(N)
+		heapInsert(arr,i) // O(logN)
 	}
 	heapsize := len(arr)
 	swap.Swap(arr,0,heapsize-1)
 
-	for {
+	for { // O(N)
 		if heapsize <= 0 {
 			break
 		}
 
-		heapify(arr,0,heapsize)
+		heapify(arr,0,heapsize) //O(logN)
 		heapsize -- 
-		swap.Swap(arr,0,heapsize)
+		swap.Swap(arr,0,heapsize) // O(1)
 	}
 }
 
