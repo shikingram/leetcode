@@ -14,3 +14,4 @@
 - [快速排序+荷兰国旗问题](base/sort/quicksort_test.go)
 - [堆结构](base/heapsort_base.md)
 - [堆排序](base/sort/heapsort_test.go)
+- [几乎有序数组排序](base/sort/sortedArrayDistanceLessK_test.go)
